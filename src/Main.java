@@ -1,3 +1,5 @@
+import jdk.jfr.Label;
+
 import java.util.Scanner;
 
 import static java.lang.Integer.*;
@@ -19,7 +21,7 @@ public class Main implements Runnable
         System.out.println("QS:"+ quersumme(inputInt));
     }
 
-    @Override
+    @Override @Label("run")
     public void run()
     {
     }

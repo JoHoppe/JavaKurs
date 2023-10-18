@@ -1,0 +1,9 @@
+<root>
+    <item name='Fahrzeug.NatürlichePerson java.lang.String arrFahrToString()'>
+        <annotation name='java.lang.Override'/>
+    </item>
+    <item name='Fahrzeug.NatürlichePerson java.lang.String toString()'>
+        <annotation name='java.lang.Override'/>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

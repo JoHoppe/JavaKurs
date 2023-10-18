@@ -11,7 +11,8 @@ public class Fahrzeugtest
         Motorrad m1 = new Motorrad(hansPeter);
         System.out.println(p1.toString());
         System.out.println(peter.toString());
-        System.out.println(hansPeter);
+        System.out.println();
+        System.out.println(hansPeter.toString());
 
 
     }

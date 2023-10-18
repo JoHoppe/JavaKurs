@@ -4,30 +4,39 @@ import java.util.ArrayList;
 
 public class NatürlichePerson extends Person implements Fahrzeughalter
 {
-    private  final String vorName;
-    private  final  String  nachName;
+    private final String vorName;
+    private final String nachName;
+
     public NatürlichePerson(String vorName, String nachName)
     {
-        super(vorName, nachName);
+        this.vorName = vorName;
+        this.nachName = nachName;
+
     }
-    public String getName(){
-        return (vorName+" "+nachName);
+
+    public String getName()
+    {
+        return (vorName + " " + nachName);
     }
-    @Override
+
     public void addFahrzeug(Fahrzeug fahrzeug)
     {
-
+        arrFahr.add(fahrzeug);
     }
 
-    @Override
     public ArrayList<Fahrzeug> getFahrzeuge()
     {
-        return null;
+        return arrFahr;
     }
 
-    @Override
     public String arrFahrToString()
     {
-        return null;
+        return Util.arrFahrToString(arrFahr);
+    }
+
+    public String toString()
+    {
+        return ("Owner: " + this.getName() + "| Cars: " + arrFahrToString());
+
     }
 }

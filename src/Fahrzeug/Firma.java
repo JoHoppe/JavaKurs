@@ -2,40 +2,39 @@ package Fahrzeug;
 
 import java.util.ArrayList;
 
-public class Firma extends JuristischePerson implements  Fahrzeughalter
+public class Firma extends JuristischePerson implements Fahrzeughalter
 {
-    private String name;
+
+    private ArrayList<Fahrzeug> arrFahr = new ArrayList<Fahrzeug>();
 
     public Firma(String name)
     {
-       this.name=name;
+        super(name);
     }
 
-    @Override
     public void addFahrzeug(Fahrzeug fahrzeug)
     {
-
+        arrFahr.add(fahrzeug);
     }
 
-    @Override
     public ArrayList<Fahrzeug> getFahrzeuge()
     {
-        return null;
+        return arrFahr;
     }
 
-    @Override
     public String arrFahrToString()
     {
-        return null;
+        return Util.arrFahrToString(arrFahr);
     }
 
-    @Override
     public String toString()
     {
-        return ("Owner: "+ name+"| Cars: "+super.toString());
+        return ("Owner: " + name + "| Cars: " + arrFahrToString());
 
     }
-    public String getName(){
+
+    public String getName()
+    {
         return (name);
     }
 

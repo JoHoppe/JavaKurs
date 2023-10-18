@@ -1,0 +1,20 @@
+<root>
+    <item name='Fahrzeug.Firma java.lang.String arrFahrToString()'>
+        <annotation name='java.lang.Override'/>
+    </item>
+    <item name='Fahrzeug.Firma java.lang.String toString()'>
+        <annotation name='java.lang.Override'/>
+    </item>
+    <item name='Fahrzeug.Firma java.util.ArrayList&lt;Fahrzeug.Fahrzeug&gt; getFahrzeuge()'>
+        <annotation name='java.lang.Override'/>
+    </item>
+    <item name='Fahrzeug.Firma void addFahrzeug(Fahrzeug.Fahrzeug)'>
+        <annotation name='java.lang.Override'/>
+    </item>
+    <item name='Fahrzeug.NatürlichePerson java.util.ArrayList&lt;Fahrzeug.Fahrzeug&gt; getFahrzeuge()'>
+        <annotation name='java.lang.Override'/>
+    </item>
+    <item name='Fahrzeug.NatürlichePerson void addFahrzeug(Fahrzeug.Fahrzeug)'>
+        <annotation name='java.lang.Override'/>
+    </item>
+</root>
