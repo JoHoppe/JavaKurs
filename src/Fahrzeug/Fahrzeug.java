@@ -1,20 +1,24 @@
 package Fahrzeug;
 
 
-public class Fahrzeug
+public abstract class Fahrzeug
 {
     private String fahrzeugart;
     private int anzahlRäder;
+    private Fahrzeughalter halter;
 
-    public Fahrzeug(int anzahlRäder)
+    public Fahrzeug(Fahrzeughalter halter,int anzahlRäder)
     {
-        this("allgemeines Fahrzeug",anzahlRäder);
+        this(halter,"allgemeines Fahrzeug",anzahlRäder);
     }
 
-    public Fahrzeug(String fahrzeugart, int anzahlRäder)
+    public Fahrzeug(Fahrzeughalter halter, String fahrzeugart, int anzahlRäder)
     {
+        this.halter = halter;
         this.fahrzeugart = fahrzeugart;
         this.anzahlRäder = anzahlRäder;
+
+        halter.addFahrzeug(this);
     }
 
     public String getFahrzeugart()
@@ -28,7 +32,11 @@ public class Fahrzeug
     }
 
     public String toString(){
-        String output =getAnzahlRäder()+getFahrzeugart();
+        String output =anzahlRäder+fahrzeugart;
+        output= output+"owned by:" + halter.getName();
         return output;
+    }
+    public  String noOwnerToString(){
+        return anzahlRäder+fahrzeugart;
     }
 }

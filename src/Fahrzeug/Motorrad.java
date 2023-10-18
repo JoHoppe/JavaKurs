@@ -2,8 +2,9 @@ package Fahrzeug;
 
 public class Motorrad extends Fahrzeug
 {
-    public Motorrad()
+    public Motorrad(Fahrzeughalter fahrzeughalter)
     {
-        super("Motorrad",2);
+        super(fahrzeughalter,"moto",2);
     }
+
 }

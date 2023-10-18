@@ -5,9 +5,9 @@ public class PKW extends Fahrzeug
     private int anzahlTüren;
 
 
-    public PKW(int anzahlRäder,int anzahlTüren)
+    public PKW(Fahrzeughalter fahrzeughalter,int anzahlRäder,int anzahlTüren)
     {
-        super("PKW",anzahlRäder);
+        super(fahrzeughalter,"PKW",anzahlRäder);
         this.anzahlTüren= anzahlTüren;
 
     }
@@ -21,5 +21,8 @@ public class PKW extends Fahrzeug
     public String toString(){
         String output= super.toString()+getAnzahlTüren();
         return output;
+    }
+    public  String noOwnerToString(){
+        return super.noOwnerToString()+getAnzahlTüren();
     }
 }
